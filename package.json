@@ -9,15 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.4"
+    "@emailjs/browser": "^4.4.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.2.0",
+    "lucide-react": "^0.471.0",
+    "motion": "^11.17.0",
+    "next": "15.1.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.54.2",
+    "react-hot-toast": "^2.5.1",
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
-    "@eslint/eslintrc": "^3"
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }

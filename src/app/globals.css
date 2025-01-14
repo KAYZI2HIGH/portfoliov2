@@ -2,20 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html{
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.grid_stacked {
+  display: grid;
+  grid-template-areas: 'stack';
+  place-items: center;
+}
+.grid_stacked > * {
+  grid-area: stack;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.spotlight {
+  position: absolute;
+  width: 322px;
+  height: 308px;
+  background: rgb(81, 0, 255);
+  background: linear-gradient(
+    190deg,
+    rgb(81, 0, 255) 0%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+}
+.scroll_hidden {
+  scrollbar-width: none;
+}
+.scroll_hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  @apply text-3xl md:text-4xl lg:text-5xl cursor-default;
+}
+.section_title {
+  @apply text-xl md:text-2xl lg:text-3xl cursor-default;
+}
+.body_text {
+  @apply text-base md:text-lg lg:text-xl cursor-default;
+}
+.normal_text {
+  @apply text-sm md:text-base lg:text-lg
+}
+.small_text {
+  @apply text-xs md:text-sm lg:text-base cursor-default;
 }

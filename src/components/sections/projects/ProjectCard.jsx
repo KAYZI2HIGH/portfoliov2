@@ -9,7 +9,7 @@ const ProjectCard = ({project, index}) => {
       // initial={{ opacity: 0, scale: 0.5 }}
       // animate={{ opacity: 1, scale: 1 }}
       // transition={{ duration: 1, ease: easeIn }}
-      className="bg-white dark:bg-gray-900 overflow-hidden rounded-xl flex flex-col justify-between shadow-md max-w-[350px] md:max-w-[400px] mx-auto pb-5"
+      className="bg-white dark:bg-gray-900 overflow-hidden rounded-xl flex flex-col justify-between shadow-md w-full max-w-[300px] md:max-w-[400px] mx-auto pb-5"
     >
       <img
         src={`/images/${project.image}.png`}

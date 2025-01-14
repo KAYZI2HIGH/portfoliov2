@@ -1,6 +1,3 @@
-import { Button, IconButton } from "@mui/material";
-import { Download } from "lucide-react";
-import Link from "next/link";
 import SocialsButton from "./SocialsButton";
 
 const Hero = () => {
@@ -9,7 +6,7 @@ const Hero = () => {
       // initial={{ opacity: 0, scale: 0.5 }}
       // animate={{ opacity: 1, scale: 1 }}
       // transition={{ type: "spring", duration: 2.5, delay: 0.2 }}
-      className="text-center px-5 relative flex items-center md:justify-center h-[calc(100vh-60px)] md:h-screen"
+      className="text-center px-7 relative flex items-center md:justify-center h-[calc(100vh-60px)] md:h-screen"
       id="home"
     >
       <div className="w-full max-w-[800px] flex flex-col gap-3 text-black dark:text-white">

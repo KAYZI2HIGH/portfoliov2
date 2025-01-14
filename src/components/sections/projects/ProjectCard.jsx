@@ -33,8 +33,7 @@ const ProjectCard = ({project, index}) => {
         />
       </div>
       <div className="px-5 mt-4 flex justify-between items-center">
-        <div className="flex gap-2 max-w-[60%] overflow-scroll scroll_hidden">
-          {project.techStack.map((tech, index) => (
+        <div className="sm:flex gap-2 max-w-[60%] overflow-scroll scroll_hidden">          {project.techStack.map((tech, index) => (
             <h1
               key={index}
               className="py-1 px-2 bg-gray-100 dark:bg-gray-800 rounded-full small_text lg:text-sm whitespace-nowrap"

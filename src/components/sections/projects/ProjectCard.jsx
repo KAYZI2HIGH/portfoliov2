@@ -1,9 +1,10 @@
-import ShortenText from '@/utils/Shortentext';
-import { ArrowRight, Github, LinkIcon } from 'lucide-react';
-import Link from 'next/link';
-import React from 'react'
+import ShortenText from "@/utils/Shortentext";
+import { ArrowRight, Github, LinkIcon } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-const ProjectCard = ({project, index}) => {
+const ProjectCard = ({ project, index }) => {
   return (
     <div
       // initial={{ opacity: 0, scale: 0.5 }}
@@ -11,10 +12,13 @@ const ProjectCard = ({project, index}) => {
       // transition={{ duration: 1, ease: easeIn }}
       className="bg-white dark:bg-gray-900 overflow-hidden rounded-xl flex flex-col justify-between shadow-md w-full max-w-[300px] md:max-w-[400px] mx-auto pb-5"
     >
-      <img
-        src={`/images/${project.image}.png`}
-        className="w-full h-48"
-      />
+      <div className="w-full h-48 relative">
+        <Image
+          src={`/images/${project.image}.png`}
+          alt="Project Image"
+          fill
+        />
+      </div>
       <div className="flex justify-between px-4 items-center mt-4">
         <h1 className="body_text font-medium tracking-wide">{project.name}</h1>
         <div className="flex gap-3 w-fit">
@@ -53,6 +57,6 @@ const ProjectCard = ({project, index}) => {
       </div>
     </div>
   );
-}
+};
 
-export default ProjectCard
+export default ProjectCard;

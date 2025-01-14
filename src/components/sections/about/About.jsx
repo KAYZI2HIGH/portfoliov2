@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { techStack } from "@/utils/constants";
 import Button from "@mui/material/Button";
 import Link from "next/link";

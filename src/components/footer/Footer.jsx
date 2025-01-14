@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <section className="sm:flex justify-between items-center w-full px-10 py-6 bg-[#EFEFF1] dark:bg-[#0d1018]">
+    <section className="space-y-4 sm: space-y-0 sm:flex justify-between items-center w-full px-10 py-6 bg-[#EFEFF1] dark:bg-[#0d1018]">
       <div className="flex gap-4 *:cursor-pointer">
         <Github size={18} onClick={() => {
           window.location.href = "https://github.com/KAYZI2HIGH"

@@ -31,7 +31,7 @@ const Projects = () => {
             responsive website with clean design and seeamless user experience
           </h1>
         </div>
-        <div className="grid grid-cols-auto-lg mt-10 gap-10 max-w-full">
+        <div className="grid sm:grid-cols-auto-lg mt-10 gap-10 max-w-full">
           {projects.map((project, index) => {
             if (index > 3) {
               return;

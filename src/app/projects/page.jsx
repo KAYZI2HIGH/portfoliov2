@@ -30,7 +30,7 @@ const ProductPage = () => {
         </p>
       </div>
       <div className="w-full bg-[#EFEFF1] dark:bg-[#0d1018]  py-10">
-        <div className="grid grid-cols-auto-lg mt-10 gap-10 max-w-[1000px] mx-auto">
+        <div className="grid sm:grid-cols-auto-lg mt-10 gap-10 max-w-[1000px] mx-auto">
           {projects.map((project, index) => (
             <ProjectCard
               project={project}

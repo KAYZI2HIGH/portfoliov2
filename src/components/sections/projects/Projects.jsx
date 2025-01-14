@@ -33,7 +33,7 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-auto-lg mt-10 gap-10 max-w-full">
           {projects.map((project, index) => {
-            if (index > 4) {
+            if (index > 3) {
               return;
             } else {
               return (

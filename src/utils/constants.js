@@ -18,6 +18,32 @@ export const navLinks = [
 ];
 export const projects = [
   {
+    name: "Baynedad Property Manager",
+    description: `A full-stack property management application built with Next.js. It allows users to manage properties, upload images, and handle authentication seamlessly.`,
+    about: `This project was designed to streamline property management tasks. It integrates Cloudinary for secure image storage and NextAuth for robust user authentication. The focus was on creating a modern, responsive application to cater to both property managers and their clients.`,
+    keyFeatures: [
+      "User authentication with NextAuth",
+      "Cloudinary integration for image uploads",
+      "Dynamic property listing management",
+      "Responsive and modern user interface",
+      "Secure and scalable architecture",
+    ],
+    techStack: ["Next.js", "Tailwind", "Cloudinary", "NextAuth", "Vercel"],
+    image: "Project5",
+    projectDetails: {
+      duration: "7 weeks",
+      teamSize: 1,
+      outcomes: [
+        "Deepened my understanding of full-stack development with Next.js",
+        "Enhanced skills in integrating third-party services like Cloudinary and NextAuth",
+        "Gained experience in building scalable and user-friendly applications",
+      ],
+      // Update with your image reference
+      gitHubUrl: "https://github.com/KAYZI2HIGH/baynedad", // Replace with the actual repo link
+      url: "https://baynedad.vercel.app/", // Replace with the actual deployment link
+    },
+  },
+  {
     name: "Youtube Clone.",
     description: `I built a YouTube clone with React that includes video search, playback, and recommendations. It offers smooth navigation, fast loading, and a responsive design for all screen sizes.`,
     about: `This project was a deep dive into replicating key functionalities of YouTube, focusing on providing a seamless user experience. The aim was to build a dynamic web application that allows users to search, view, and interact with video content efficiently. This project required integrating third-party APIs, optimizing performance for various screen sizes, and leveraging React's capabilities for state management and component-based development.`,

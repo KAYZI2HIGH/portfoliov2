@@ -3,6 +3,12 @@ import ProjectCard from "@/components/sections/projects/ProjectCard";
 import { projects } from "@/utils/constants";
 import { Briefcase } from "lucide-react";
 
+export const metadata = {
+  title: "Projects - Kayode Portfolio", // This will be used in the default template.
+  description: "Explore my web development projects.",
+};
+
+
 const ProductPage = () => {
   return (
     <section className="mt-24">

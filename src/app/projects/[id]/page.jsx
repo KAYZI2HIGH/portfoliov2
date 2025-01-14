@@ -3,6 +3,28 @@ import { projects } from "@/utils/constants";
 import { Calendar, Github, Link, Users } from "lucide-react";
 import Image from "next/image";
 
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+
+  const projectDetials = projects[id - 1];
+
+  if (!projectDetials) {
+    return {
+      title: "Project Not Found",
+      description: "The project you are looking for does not exist.",
+    };
+  }
+
+   const title = `${projectDetials.name}`;
+   const description = projectDetials.description;
+
+  // Return dynamic metadata for the project
+  return {
+    title: title,
+    description: description,
+  };
+}
+
 const ProjectDetailsPage = async ({ params }) => {
   const { id } = await params;
 

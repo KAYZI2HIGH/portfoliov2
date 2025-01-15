@@ -39,9 +39,9 @@ export const projects = [
         "Gained experience in building scalable and user-friendly applications",
       ],
       // Update with your image reference
-      gitHubUrl: "https://github.com/KAYZI2HIGH/baynedad", // Replace with the actual repo link
-      url: "https://baynedad.vercel.app/", // Replace with the actual deployment link
     },
+    gitHubUrl: "https://github.com/KAYZI2HIGH/baynedad", // Replace with the actual repo link
+    url: "https://baynedad.vercel.app/", // Replace with the actual deployment link
   },
   {
     name: "Youtube Clone.",

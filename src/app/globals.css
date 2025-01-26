@@ -72,6 +72,7 @@ html{
   display: none;
 }
 
+
 .header {
   @apply text-3xl md:text-4xl lg:text-5xl cursor-default;
 }

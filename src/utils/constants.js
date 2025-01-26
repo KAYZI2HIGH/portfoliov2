@@ -18,6 +18,40 @@ export const navLinks = [
 ];
 export const projects = [
   {
+    name: "YCDirectory",
+    description: `A platform for creating and reading startup details, built with Next.js. It provides real-time updates, secure authentication, and error monitoring.`,
+    about: `YC Directory is designed to simplify the process of discovering and showcasing startups. It integrates Sanity for real-time content management, Cloudinary for secure image storage, and Sentry for error and performance monitoring after deployment. The focus is on providing a smooth and intuitive experience for users and administrators.`,
+    keyFeatures: [
+      "User authentication with NextAuth",
+      "Sanity integration for real-time updates",
+      "Cloudinary for image uploads",
+      "Sentry for error and web performance monitoring",
+      "Responsive and modern user interface",
+      "Secure and scalable architecture",
+    ],
+    techStack: [
+      "Tailwind",
+      "Next.js",
+      "Sanity",
+      "Cloudinary",
+      "NextAuth",
+      "Sentry",
+      "Vercel",
+    ],
+    image: "project6",
+    projectDetails: {
+      duration: "6 weeks",
+      teamSize: 1,
+      outcomes: [
+        "Improved understanding of real-time updates with Sanity",
+        "Enhanced skills in error monitoring using Sentry",
+        "Gained experience in building user-focused applications",
+      ],
+    },
+    gitHubUrl: "https://github.com/KAYZI2HIGH/ycdirectory", // Replace with the actual repo link
+    url: "https://ycdirectory-seven.vercel.app/", // Replace with the actual deployment link
+  },
+  {
     name: "Baynedad Property Manager",
     description: `A full-stack property management application built with Next.js. It allows users to manage properties, upload images, and handle authentication seamlessly.`,
     about: `This project was designed to streamline property management tasks. It integrates Cloudinary for secure image storage and NextAuth for robust user authentication. The focus was on creating a modern, responsive application to cater to both property managers and their clients.`,
@@ -55,7 +89,7 @@ export const projects = [
       "Responsive design for all devices",
     ],
     projectDetails: {
-      duration: "3 weeks",
+      duration: "2 weeks",
       teamSize: 1,
       outcomes: [
         "Enhanced my understanding of React state management with Context API",
@@ -80,7 +114,7 @@ export const projects = [
       "Integrated React Context API for state management",
     ],
     projectDetails: {
-      duration: "3 weeks",
+      duration: "2 weeks",
       teamSize: 1,
       outcomes: [
         "Improved knowledge of building e-commerce platforms",
@@ -105,7 +139,7 @@ export const projects = [
       "Smooth animations using Framer Motion",
     ],
     projectDetails: {
-      duration: "2.5 weeks",
+      duration: "2 days",
       teamSize: 1,
       outcomes: [
         "Successfully developed a responsive and interactive website",
@@ -130,7 +164,7 @@ export const projects = [
       "Modern and minimalist UI design",
     ],
     projectDetails: {
-      duration: "3 weeks",
+      duration: "4 days",
       teamSize: 1,
       outcomes: [
         "Showcased my skills and work effectively",
@@ -139,8 +173,8 @@ export const projects = [
       ],
     },
     image: "project4",
-    gitHubUrl: "https://github.com/KAYZI2HIGH/Porfolio",
-    url: "https://youtube-gray-ten.vercel.app/",
+    gitHubUrl: "https://github.com/KAYZI2HIGH/porfoliov2",
+    url: "https://portfoliov2-seven-delta.vercel.app/",
     techStack: [
       "Tailwind",
       "Framer Motion",

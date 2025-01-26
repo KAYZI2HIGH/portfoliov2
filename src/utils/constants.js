@@ -173,7 +173,7 @@ export const projects = [
       ],
     },
     image: "project4",
-    gitHubUrl: "https://github.com/KAYZI2HIGH/porfoliov2",
+    gitHubUrl: "https://github.com/KAYZI2HIGH/portfoliov2",
     url: "https://portfoliov2-seven-delta.vercel.app/",
     techStack: [
       "Tailwind",

@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <section
-      className="w-full py-24 px-5 relative text-black dark:text-white bg-slate-200 dark:bg-stone-900"
+      className="w-full py-24 px-5 relative text-black dark:text-white bg-slate-200 dark:bg-slate-800"
       id="projects"
     >
       <div className="main z-10"></div>

@@ -27,16 +27,16 @@ const About = () => {
             />
             <div>
               <h1 className="font-semibold tracking-wide">Kayode Dada</h1>
-              <p className="text-text-muted">Frontend Developer</p>
+              <p className="text-text-muted">Fullstack Developer</p>
             </div>
           </div>
           <h1 className="font-semibold text-2xl traking-wide mt-4">
             <span className="text-[#5100FF]">Passionate</span> Developer
           </h1>
           <p className="text-text-color/90 mt-2">
-            I’m a developer who thrives on problem-solving and creating seamless
-            digital experiences. Always ready to collaborate, I adapt to any
-            time zone to ensure smooth communication.
+            I’m a Next.js full-stack developer with a strong focus on front-end
+            development, dedicated to crafting seamless digital experiences. I
+            thrive on problem-solving and collaboration.
           </p>
         </div>
         <div
@@ -54,7 +54,7 @@ const About = () => {
             />
           </div>
           <div className="w-full bg-[#F4F4F5] dark:bg-[#0E0E10] shadow-lg p-5 rounded-xl z-10">
-            <h1 className="font-semibold text-3xl mb-3">
+            <h1 className="font-semibold section_title mb-3">
               <span className="text-[#5100FF]">What</span> Drives me
             </h1>
             <h1 className="text-text-muted">

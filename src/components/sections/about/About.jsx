@@ -80,37 +80,75 @@ const About = () => {
           <div className="grid grid-cols-auto mt-5 gap-10">
             {techStack.map((tech, index) => (
               <div
-                className="p-4 space-x-4 flex justify-center items-center  bg-[#EFEFF1] dark:bg-[#0A0A0C]  rounded-xl hover:cursor-pointer hover:animate-pulse"
+                className="bg-gray-50 dark:bg-black rounded-lg p-6 flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105 cursor-pointer"
                 key={index}
               >
-                <h1 className="text-md font-semibold uppercase">{tech.tech}</h1>
+                <Image
+                  src={`${tech.imageUrl}`}
+                  width={40}
+                  height={40}
+                  alt={tech.name}
+                ></Image>
+                <span className="font-medium tracking-wide uppercase text-sm">
+                  {tech.name}
+                </span>
               </div>
             ))}
           </div>
         </div>
-        <div
-          // initial={{ opacity: 0, x: "200px" }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // transition={{ duration: 1.5 }}
-          className="relative rounded-xl overflow-hidden grid_stacked"
-        >
-          <Image
-            src="/images/bg1.jpg"
-            alt="backgroung-image"
-            fill
-          />
-          <div className="my-10">
-            <h1 className="text-center relative text-3xl text-white">
-              I'm Commited to Collaboration and Clear Communication
-            </h1>
-            <Link href={"#contacts"}>
-              <Button
-                variant="contained"
-                className="bg-black p-4 font-semibold tracking-wider mt-10 mx-auto flex rounded-xl hover:bg-opacity-80"
-              >
-                let's collaborate
-              </Button>
-            </Link>
+        <div className="gap-10 flex flex-col justify-between">
+          <div
+            // initial={{ opacity: 0, x: "200px" }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 1.5 }}
+            className="relative rounded-xl overflow-hidden grid_stacked h-fit"
+          >
+            <Image
+              src="/images/bg1.jpg"
+              alt="backgroung-image"
+              fill
+            />
+            <div className="my-10">
+              <div className="p-5 relative leading-relaxed text-white">
+                <h1 className="text-3xl font-medium leading-loose mb-3">
+                  💻 My Tech Stack
+                </h1>
+                I specialize in frontend development, crafting responsive and
+                user-friendly websites for small and medium-sized businesses. My
+                expertise lies in React, Next.js, and Tailwind CSS, enabling me
+                to build dynamic and modern web applications. For project
+                management, I handle everything from planning to deployment,
+                ensuring seamless execution and regular communication with
+                clients. I use Cloudinary for optimized image storage and
+                NextAuth for secure authentication. I also integrate Sanity for
+                real-time content management and Sentry for error monitoring.
+              </div>
+            </div>
+          </div>
+          <div
+            // initial={{ opacity: 0, x: "200px" }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 1.5 }}
+            className="relative rounded-xl overflow-hidden grid_stacked h-80"
+          >
+            <Image
+              src="/images/bg1.jpg"
+              alt="backgroung-image"
+              fill
+            />
+            <div className="my-10">
+              <h1 className="text-center relative text-3xl text-white">
+                I'm Commited to Collaboration and Clear Communication
+              </h1>
+              <Link href={"#contacts"}>
+                <Button
+                  variant="contained"
+                  className="bg-black p-4 font-semibold tracking-wider mt-10 mx-auto flex rounded-xl hover:bg-opacity-80"
+                >
+                  let's collaborate
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

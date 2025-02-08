@@ -97,7 +97,7 @@ const About = () => {
           </div>
         </div>
         <div className="gap-10 flex flex-col justify-between">
-          <div
+          {/* <div
             // initial={{ opacity: 0, x: "200px" }}
             // whileInView={{ opacity: 1, x: 0 }}
             // transition={{ duration: 1.5 }}
@@ -124,12 +124,19 @@ const About = () => {
                 real-time content management and Sentry for error monitoring.
               </div>
             </div>
+          </div> */}
+          <div className="hidden lg:flex relative w-full h-full">
+            <Image
+              src="images/man-on-laptop-photoshop.svg"
+              alt="avatar"
+              fill
+            />
           </div>
           <div
             // initial={{ opacity: 0, x: "200px" }}
             // whileInView={{ opacity: 1, x: 0 }}
             // transition={{ duration: 1.5 }}
-            className="relative rounded-xl overflow-hidden grid_stacked h-80"
+            className="relative rounded-xl overflow-hidden grid_stacked min-h-80"
           >
             <Image
               src="/images/bg1.jpg"

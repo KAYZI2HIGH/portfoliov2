@@ -240,16 +240,6 @@ export const techStack = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
   {
-    name: "HTML",
-    imageUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-  },
-  {
-    name: "CSS",
-    imageUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-  },
-  {
     name: "Python",
     imageUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
@@ -263,11 +253,6 @@ export const techStack = [
     name: "Firebase",
     imageUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg",
-  },
-  {
-    name: "Git",
-    imageUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg",
   },
   {
     name: "Material UI",
@@ -295,25 +280,10 @@ export const techStack = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
   },
   {
-    name: "PyCharm",
-    imageUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg",
-  },
-  {
-    name: "Redux",
-    imageUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-  },
-  {
     name: "Tailwind",
     imageUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    name: "Sass",
-    imageUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
-  },
+  },  
   {
     name: "VSCode",
     imageUrl:

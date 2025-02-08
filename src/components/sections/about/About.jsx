@@ -77,7 +77,7 @@ const About = () => {
           <h1 className="text-lg text-text-color/70">
             Always Evolving my Tech Stack
           </h1>
-          <div className="grid grid-cols-auto mt-5 gap-10 ">
+          <div className="grid grid-cols-small sm:grid-cols-auto mt-5 gap-10 ">
             {techStack.map((tech, index) => (
               <div
                 className="bg-gray-50 dark:bg-black rounded-lg p-6 flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105 cursor-pointer"

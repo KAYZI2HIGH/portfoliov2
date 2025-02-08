@@ -20,6 +20,7 @@ export const projects = [
   {
     name: "YCDirectory",
     description: `A platform for creating and reading startup details, built with Next.js. It provides real-time updates, secure authentication, and error monitoring.`,
+    category: "fullstack",
     about: `YC Directory is designed to simplify the process of discovering and showcasing startups. It integrates Sanity for real-time content management, Cloudinary for secure image storage, and Sentry for error and performance monitoring after deployment. The focus is on providing a smooth and intuitive experience for users and administrators.`,
     keyFeatures: [
       "User authentication with NextAuth",
@@ -31,6 +32,7 @@ export const projects = [
     ],
     techStack: [
       "Tailwind",
+      "Material UI",
       "Next.js",
       "Sanity",
       "Cloudinary",
@@ -54,6 +56,7 @@ export const projects = [
   {
     name: "Baynedad Property Manager",
     description: `A full-stack property management application built with Next.js. It allows users to manage properties, upload images, and handle authentication seamlessly.`,
+    category: "fullstack",
     about: `This project was designed to streamline property management tasks. It integrates Cloudinary for secure image storage and NextAuth for robust user authentication. The focus was on creating a modern, responsive application to cater to both property managers and their clients.`,
     keyFeatures: [
       "User authentication with NextAuth",
@@ -62,7 +65,15 @@ export const projects = [
       "Responsive and modern user interface",
       "Secure and scalable architecture",
     ],
-    techStack: ["Next.js", "Tailwind", "Cloudinary", "NextAuth", "Vercel"],
+    techStack: [
+      "Next.js",
+      "Tailwind",
+      "Cloudinary",
+      "NextAuth",
+      "MongoDB",
+      "Mongoose",
+      "Vercel",
+    ],
     image: "Project5",
     projectDetails: {
       duration: "7 weeks",
@@ -80,6 +91,7 @@ export const projects = [
   {
     name: "Youtube Clone.",
     description: `I built a YouTube clone with React that includes video search, playback, and recommendations. It offers smooth navigation, fast loading, and a responsive design for all screen sizes.`,
+    category: "frontend",
     about: `This project was a deep dive into replicating key functionalities of YouTube, focusing on providing a seamless user experience. The aim was to build a dynamic web application that allows users to search, view, and interact with video content efficiently. This project required integrating third-party APIs, optimizing performance for various screen sizes, and leveraging React's capabilities for state management and component-based development.`,
     keyFeatures: [
       "Video search functionality",
@@ -100,11 +112,19 @@ export const projects = [
     image: "project2",
     gitHubUrl: "https://github.com/KAYZI2HIGH/Youtube-Demo",
     url: "https://youtube-gray-ten.vercel.app/",
-    techStack: ["Tailwind", "Framer Motion", "React", "Context API", "Vercel"],
+    techStack: [
+      "Tailwind",
+      "Framer Motion",
+      "React",
+      "Context API",
+      "Vercel",
+      "Rapid API",
+    ],
   },
   {
     name: "Amazon demo website.",
     description: `I developed an Amazon demo website simulating an e-commerce platform with product listings, search, product details, and a shopping cart. Built with React, it offers a responsive and intuitive user interface.`,
+    category: "frontend",
     about: `This project is a simplified e-commerce website that mimics Amazon's core functionality. It includes product listings, dynamic search features, and a shopping cart for a complete user experience. The focus was on creating an interactive interface that adapts to user needs, ensuring mobile responsiveness and smooth transitions.`,
     keyFeatures: [
       "Product listing and filtering",
@@ -125,11 +145,12 @@ export const projects = [
     image: "project3",
     gitHubUrl: "https://github.com/KAYZI2HIGH/Amazon",
     url: "https://amazon-alpha-pearl.vercel.app/",
-    techStack: ["Tailwind", "React", "Context API", "Vercel"],
+    techStack: ["Material UI", "Tailwind", "React", "Context API", "Vercel"],
   },
   {
     name: "Champions Webpage.",
     description: `I created a church website to enhance community engagement with event schedules, online testimonies, and a contact section. Built with React, it’s mobile-friendly and adapts to all screen sizes.`,
+    category: "frontend",
     about: `The Champions Webpage is designed to foster community connection and engagement. The platform showcases upcoming events, provides a section for online testimonies, and includes an easily accessible contact form. The goal was to create a welcoming and user-friendly experience that helps strengthen the church's online presence.`,
     keyFeatures: [
       "Event schedule display",
@@ -150,11 +171,19 @@ export const projects = [
     image: "project1",
     gitHubUrl: "https://github.com/KAYZI2HIGH/Champions",
     url: "https://champions-pi.vercel.app/",
-    techStack: ["Tailwind", "Framer Motion", "React", "Context API", "Vercel"],
+    techStack: [
+      "Tailwind",
+      "Material UI",
+      "Framer Motion",
+      "React",
+      "Context API",
+      "Vercel",
+    ],
   },
   {
     name: "My Porfolio.",
     description: `I developed a portfolio website to showcase my projects and skills as a web developer. Built with React and Tailwind, it features a modern design, smooth navigation, and responsive layouts for all screen sizes.`,
+    category: "frontend",
     about: `This portfolio website is designed to highlight my technical skills, projects, and achievements as a web developer. It provides visitors with a clear and interactive way to navigate my work and contact me. The focus was on creating a visually appealing design with smooth animations and responsive layouts.`,
     keyFeatures: [
       "Showcases projects with descriptions and links",

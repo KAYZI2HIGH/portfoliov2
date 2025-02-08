@@ -10,9 +10,10 @@ const ProjectCard = ({ project, index }) => {
       // initial={{ opacity: 0, scale: 0.5 }}
       // animate={{ opacity: 1, scale: 1 }}
       // transition={{ duration: 1, ease: easeIn }}
-      className="bg-white dark:bg-gray-900 overflow-hidden rounded-xl flex flex-col justify-between shadow-md w-full max-w-[300px] md:max-w-[400px] mx-auto pb-5"
+      className="bg-white dark:bg-gray-900 overflow-hidden rounded-xl flex flex-col justify-between shadow-md w-full max-w-[300px] md:max-w-[400px] mx-auto pb-5 relative"
     >
       <div className="w-full h-48 relative">
+        <h1 className="py-1 px-2 text-white bg-green-600 rounded-full small_text font-semibold tracking-wide capitalize lg:text-sm whitespace-nowrap absolute top-3 right-3 z-30">{project.category}</h1>
         <Image
           src={`/images/${project.image}.png`}
           alt="Project Image"
@@ -30,6 +31,7 @@ const ProjectCard = ({ project, index }) => {
           </a>
         </div>
       </div>
+
       <div className="normal_text px-5 mt-3 md:font-light lg:text-base">
         <ShortenText
           text={project.description}

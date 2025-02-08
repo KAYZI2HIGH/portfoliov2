@@ -115,7 +115,7 @@ const ProjectDetailsPage = async ({ params }) => {
           <div className="p-8 bg-white dark:bg-[#1F2937] rounded-lg w-full">
             <div className="pb-7 border-b flex flex-col gap-4">
               <h1 className="body_text font-semibold tracking-wide">
-                Project Details
+                Project Details ({projectDetials.category})
               </h1>
               <div className="space-y-4">
                 <div className="flex justify-center items-center gap-4 w-fit">

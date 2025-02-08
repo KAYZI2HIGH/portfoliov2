@@ -9,12 +9,12 @@ const About = () => {
       className="bg-[#EFEFF1] dark:bg-[#0A0A0C] px-5 py-24  space-y-10"
       id="about"
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 w-full gap-10">
         <div
           // initial={{ opacity: 0, x: "-100px" }}
           // whileInView={{ opacity: 1, x: 0 }}
           // transition={{ duration: 1.5 }}
-          className="py-8 px-6 bg-white dark:bg-[#171719] rounded-2xl shadow-sm text-black dark:text-white relative overflow-hidden md:col-start-1 md:col-span-1"
+          className="py-8 px-6 bg-white dark:bg-[#171719] rounded-2xl shadow-sm text-black dark:text-white relative overflow-hidden lg:col-start-1 lg:col-span-1"
         >
           <span className="spotlight left-0 w-[20%] -top-10 -z-1"></span>
           <div className="w-full flex space-x-4 rounded-xl p-3 items-center bg-[#eeeeee] dark:bg-[#0A0A0C] z-1 relative">
@@ -43,7 +43,7 @@ const About = () => {
           // initial={{ opacity: 0, x: "200px" }}
           // whileInView={{ opacity: 1, x: 0 }}
           // transition={{ duration: 1.5 }}
-          className="lg:flex md:col-start-2 md:col-span-2  bg-white dark:bg-[#171719] rounded-2xl p-5 lg:space-x-10 relative overflow-hidden  justify-center"
+          className="lg:flex lg:col-start-2 lg:col-span-2  bg-white dark:bg-[#171719] rounded-2xl p-5 lg:space-x-10 relative overflow-hidden  justify-center"
         >
           <span className="spotlight right-0 w-[20%] -top-5 -z-1"></span>
           <div className="w-full h-64 lg:h-full my-auto rounded-2xl mb-10 md:mb-0 relative overflow-hidden">
@@ -69,7 +69,7 @@ const About = () => {
           // initial={{ opacity: 0, x: "-100px" }}
           // whileInView={{ opacity: 1, x: 0 }}
           // transition={{ duration: 1.5 }}
-          className="space-y-4 bg-white dark:bg-[#171719] py-10 px-5 rounded-xl md:col-start-1 md:col-span-2"
+          className="space-y-4 bg-white dark:bg-[#171719] py-10 px-5 rounded-xl lg:col-start-1 lg:col-span-2"
         >
           <h1 className="text-4xl font-semibold">
             My <span className="text-text-blue">Tech Stack</span>
@@ -77,7 +77,7 @@ const About = () => {
           <h1 className="text-lg text-text-color/70">
             Always Evolving my Tech Stack
           </h1>
-          <div className="grid grid-cols-auto mt-5 gap-10">
+          <div className="grid grid-cols-auto mt-5 gap-10 ">
             {techStack.map((tech, index) => (
               <div
                 className="bg-gray-50 dark:bg-black rounded-lg p-6 flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105 cursor-pointer"

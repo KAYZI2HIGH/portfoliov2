@@ -21,7 +21,7 @@ const Hero = () => {
           Transforming Concepts into Seemless{" "}
           <span className="text-[#5100FF]">User Experience</span>.
         </h1>
-        <h1 className="body_text tracking-wide text-left text-gray-800 dark:text-gray-300 md:text-center md:max-w-[700px] mx-auto">
+        <h1 className="body_text tracking-wide text-left text-gray-800 dark:text-gray-300 md:text-center md:max-w-[700px] mx-auto sm:text-center">
           Hi! 👋 I'm <span className="text-black dark:text-white font-semibold">
             Kayode
           </span>, a 
@@ -37,7 +37,7 @@ const Hero = () => {
         <a
           href="/CV.pdf" // File path relative to the `public` directory
           download="Kayode_Resume.pdf" // Suggested filename when downloaded
-          className="bg-[#4400d6] text-white flex items-center justify-center gap-2 px-6 py-3 rounded-md font-bold hover:bg-opacity-80 transition-all duration-300 w-fit md:mx-auto"
+          className="bg-[#4400d6] text-white flex items-center justify-center gap-2 px-6 py-3 rounded-md font-bold hover:bg-opacity-80 transition-all duration-300 w-fit sm:mx-auto"
         >
           RESUME
           <svg

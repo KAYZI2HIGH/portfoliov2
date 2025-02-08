@@ -72,7 +72,7 @@ const Navbar = () => {
           }}
           className={`${
             darkMode ? "text-white" : "text-black"
-          } size-10 flex justify-center items-center `}
+          } size-10 flex justify-center items-center cursor-pointer`}
         >
           {darkMode ? <Sun size={25} /> : <Moon size={25} />}
         </div>

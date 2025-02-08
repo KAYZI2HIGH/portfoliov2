@@ -5,7 +5,7 @@ import { Github, Instagram, MessageCircle, Twitter } from 'lucide-react';
 
 const SocialsButton = () => {
   return (
-    <div className="flex space-x-4 w-fit md:mx-auto my-2">
+    <div className="flex space-x-4 w-fit md:mx-auto my-2 sm:mx-auto">
       <IconButton
         className="bg-gray-200 hover:bg-gray-300 dark:bg-black/20"
         onClick={() => (window.location.href = "https://x.com/KayziGucci")}

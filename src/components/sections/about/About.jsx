@@ -125,7 +125,7 @@ const About = () => {
               </div>
             </div>
           </div> */}
-          <div className="hidden lg:flex relative w-full h-full bg-white/40 rounded-md">
+          <div className="hidden lg:flex relative w-full h-full dark:bg-[#4B94A2] rounded-md">
             <Image
               src="images/man-on-laptop-photoshop.svg"
               alt="avatar"

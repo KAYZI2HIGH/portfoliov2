@@ -50,7 +50,7 @@ const Navbar = () => {
       variants={{ hidden: { y: "-200%" }, visible: { y: 0 } }}
       animate={`${hidden ? "hidden" : "visible"}`}
       transition={{ duration: 0.33, ease: easeInOut }}
-      className="flex justify-between items-center p-4 shadow-lg  bg-[#EFEFF1] dark:bg-[#0A0A0C] rounded-lg sticky top-10 z-50 min-w-[250px] w-fit mx-auto gap-4"
+      className="flex justify-between items-center p-4 shadow-lg  bg-[#EFEFF1] dark:bg-[#0A0A0C] rounded-xl sticky top-10 z-50 min-w-[70%] md:min-w-[300px] w-fit mx-auto gap-4"
     >
       <div className="size-10 relative">
         <Link href={'/'}>

@@ -11,6 +11,7 @@ import { EffectCube, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
+import ImageSlider from "@/components/Swiper";
 
 const ProjectCard = ({ project, index, itemVariants }) => {
   return (
@@ -25,25 +26,7 @@ const ProjectCard = ({ project, index, itemVariants }) => {
         <h1 className="py-1 px-2 text-white bg-green-600 rounded-full small_text font-semibold tracking-wide capitalize lg:text-sm whitespace-nowrap absolute top-3 right-3 z-30">
           {project.category}
         </h1>
-        <Swiper
-          modules={[EffectCube, Navigation]}
-          slidesPerView={1}
-          navigation
-          effect="card"
-          className="absolute w-full h-full"
-        >
-          {project.image.map((image, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <Image
-                  src={`/images/${image}.png`}
-                  alt="Project Image"
-                  fill
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+        <ImageSlider images={project.image}/>
         {/* <Image
           src={`/images/${project.image}.png`}
           alt="Project Image"

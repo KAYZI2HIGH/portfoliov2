@@ -1,4 +1,5 @@
 import BackButton from "@/components/backbutton/BackButton";
+import ImageSlider from "@/components/Swiper";
 import { projects } from "@/utils/constants";
 import { Calendar, Github, Link, Users } from "lucide-react";
 import Image from "next/image";
@@ -61,11 +62,7 @@ const ProjectDetailsPage = async ({ params }) => {
           </div>
           <div className="bg-[#EFEFF1] dark:bg-[#060a13] px-4 py-5 w-full rounded-lg">
             <div className="w-full h-60 md:h-80 rounded-lg overflow-hidden relative">
-              <Image
-                src={`/images/${projectDetials.image}.png`}
-                fill
-                alt="project-image"
-              />
+              <ImageSlider images={projectDetials.image}/>
             </div>
           </div>
         </div>

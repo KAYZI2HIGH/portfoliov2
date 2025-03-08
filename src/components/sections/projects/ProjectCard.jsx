@@ -1,24 +1,54 @@
+'use client'
 import ShortenText from "@/utils/Shortentext";
 import { ArrowRight, Github, LinkIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from 'framer-motion'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCube, Navigation } from "swiper/modules";
 
-const ProjectCard = ({ project, index }) => {
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+
+const ProjectCard = ({ project, index, itemVariants }) => {
   return (
-    <div
-      // initial={{ opacity: 0, scale: 0.5 }}
-      // animate={{ opacity: 1, scale: 1 }}
-      // transition={{ duration: 1, ease: easeIn }}
+    <motion.div
+      variants={itemVariants}
+      whileHover={{
+        y: -10,
+      }}
       className="bg-white dark:bg-gray-900 overflow-hidden rounded-xl flex flex-col justify-between shadow-md w-full max-w-[300px] md:max-w-[400px] mx-auto pb-5 relative"
     >
       <div className="w-full h-48 relative">
-        <h1 className="py-1 px-2 text-white bg-green-600 rounded-full small_text font-semibold tracking-wide capitalize lg:text-sm whitespace-nowrap absolute top-3 right-3 z-30">{project.category}</h1>
-        <Image
+        <h1 className="py-1 px-2 text-white bg-green-600 rounded-full small_text font-semibold tracking-wide capitalize lg:text-sm whitespace-nowrap absolute top-3 right-3 z-30">
+          {project.category}
+        </h1>
+        <Swiper
+          modules={[EffectCube, Navigation]}
+          slidesPerView={1}
+          navigation
+          effect="card"
+          className="absolute w-full h-full"
+        >
+          {project.image.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <Image
+                  src={`/images/${image}.png`}
+                  alt="Project Image"
+                  fill
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        {/* <Image
           src={`/images/${project.image}.png`}
           alt="Project Image"
           fill
-        />
+        /> */}
       </div>
       <div className="flex justify-between px-4 items-center mt-4">
         <h1 className="body_text font-medium tracking-wide">{project.name}</h1>
@@ -57,7 +87,7 @@ const ProjectCard = ({ project, index }) => {
           <ArrowRight size={18} />
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

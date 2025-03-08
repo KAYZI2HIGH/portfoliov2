@@ -47,10 +47,10 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      variants={{ hidden: { y: "-200%" }, visible: { y: 0 } }}
+      variants={{ hidden: { top: "-200px", opacity: 0, visibility: "hidden" }, visible: {top: '40px', opacity: 1, visibility: "visible" } }}
       animate={`${hidden ? "hidden" : "visible"}`}
       transition={{ duration: 0.33, ease: easeInOut }}
-      className="flex justify-between items-center p-4 shadow-lg  bg-[#EFEFF1] dark:bg-[#0A0A0C] rounded-xl sticky top-10 z-50 min-w-[70%] md:min-w-[300px] w-fit mx-auto gap-4"
+      className={`fixed flex justify-between items-center p-4 shadow-lg  bg-[#EFEFF1] dark:bg-[#000000] rounded-xl top-10 left-1/2 -translate-x-1/2 z-50 min-w-[70%] md:min-w-[300px] w-fit mx-auto gap-4 `}
     >
       <div className="size-10 relative">
         <Link href={'/'}>

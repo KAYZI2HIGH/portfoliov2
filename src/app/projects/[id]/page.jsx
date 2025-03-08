@@ -31,7 +31,7 @@ const ProjectDetailsPage = async ({ params }) => {
   const projectDetials = projects[id - 1];
 
   return (
-    <div className="mt-20">
+    <div className="mt-20 pt-16">
       <div className="px-5 md:px-0 max-w-[1000px] mx-auto space-y-5">
         <BackButton />
         <div className="flex flex-col md:flex-row gap-10 pb-20 items-center">

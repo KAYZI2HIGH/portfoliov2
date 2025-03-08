@@ -1,19 +1,96 @@
+'use client'
 import { techStack } from "@/utils/constants";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+      },
+    },
+  };
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1.2,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+  };
+   const backgroundVariants = {
+     hidden: {
+       scale: 1.05,
+     },
+     visible: {
+       scale: 1,
+       transition: {
+         duration: 1.5,
+         ease: "easeOut",
+       },
+     },
+   };
+const techContainerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+const techItemVariants = {
+  hidden: {
+    opacity: 0,
+    x: -20,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
   return (
     <section
-      className="bg-[#EFEFF1] dark:bg-[#0A0A0C] px-5 py-24  space-y-10"
+      ref={ref}
+      className="relative bg-gradient-to-b from-gray-100 to-[#EFEFF1] dark:from-black dark:to-gray-900  px-5 py-24  space-y-10"
       id="about"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-3 w-full gap-10">
-        <div
-          // initial={{ opacity: 0, x: "-100px" }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // transition={{ duration: 1.5 }}
+      <motion.div
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={containerVariants}
+        className="grid grid-cols-1 lg:grid-cols-3 w-full gap-10"
+      >
+        <motion.div
+          variants={itemVariants}
+          whileHover={{
+            y: -5,
+          }}
+          transition={{
+            duration: 0.3,
+          }}
           className="py-8 px-6 bg-white dark:bg-[#171719] rounded-2xl shadow-sm text-black dark:text-white relative overflow-hidden lg:col-start-1 lg:col-span-1"
         >
           <span className="spotlight left-0 w-[20%] -top-10 -z-1"></span>
@@ -38,22 +115,64 @@ const About = () => {
             development, dedicated to crafting seamless digital experiences. I
             thrive on problem-solving and collaboration.
           </p>
-        </div>
-        <div
-          // initial={{ opacity: 0, x: "200px" }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // transition={{ duration: 1.5 }}
-          className="lg:flex lg:col-start-2 lg:col-span-2  bg-white dark:bg-[#171719] rounded-2xl p-5 lg:space-x-10 relative overflow-hidden  justify-center"
+        </motion.div>
+        <motion.div
+          variants={itemVariants}
+          whileHover={{
+            y: -5,
+          }}
+          transition={{
+            duration: 0.3,
+          }}
+          className="lg:flex lg:col-start-2 lg:col-span-2  bg-white dark:bg-[#171719] rounded-2xl p-5 space-y-10 lg:space-y-0 lg:space-x-10 relative overflow-hidden  justify-center"
         >
-          <span className="spotlight right-0 w-[20%] -top-5 -z-1"></span>
-          <div className="w-full h-64 lg:h-full my-auto rounded-2xl mb-10 md:mb-0 relative overflow-hidden">
-            <Image
-              src="/images/demo.jpg"
-              alt="code-preview image"
-              fill
-            />
-          </div>
-          <div className="w-full bg-[#F4F4F5] dark:bg-[#0E0E10] shadow-lg p-5 rounded-xl z-10">
+          {/* <span className="spotlight right-0 w-[20%] -top-5 -z-1"></span> */}
+          <motion.div
+            variants={itemVariants}
+            className="relative bg-[#1E1E1E] rounded-3xl overflow-hidden shadow-sm w-full h-72 md:h-full"
+            whileHover={{
+              y: -5,
+            }}
+            transition={{
+              duration: 0.3,
+            }}
+          >
+            <div className="flex items-center gap-2 px-4 py-3 bg-[#2D2D2D]">
+              <div className="flex gap-2">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+            </div>
+            <div className="p-6">
+              <pre className="text-sm font-mono">
+                <code className="text-blue-400">const</code>{" "}
+                <code className="text-green-400">developer</code>{" "}
+                <code className="text-white">=</code>{" "}
+                <code className="text-orange-400">{"{"}</code>
+                {"\n  "}
+                <code className="text-purple-400">name:</code>{" "}
+                <code className="text-green-300">'Kayode Dada'</code>,{"\n  "}
+                <code className="text-purple-400">role:</code>{" "}
+                <code className="text-green-300">'Full Stack Developer'</code>,
+                {"\n  "}
+                <code className="text-purple-400">loves:</code>{" "}
+                <code className="text-green-300">'Creating Amazing UIs'</code>
+                {"\n"}
+                <code className="text-orange-400">{"}"}</code>
+              </pre>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={itemVariants}
+            whileHover={{
+              y: -5,
+            }}
+            transition={{
+              duration: 0.3,
+            }}
+            className="w-full bg-[#F4F4F5] dark:bg-[#0E0E10] shadow-lg p-5 rounded-xl z-10"
+          >
             <h1 className="font-semibold section_title mb-3">
               <span className="text-[#5100FF]">What</span> Drives me
             </h1>
@@ -63,23 +182,34 @@ const About = () => {
               needs with bold innovation. Every project is a chance to push
               boundaries, turning ideas into intuitive, dynamic realities.
             </h1>
-          </div>
-        </div>
-        <div
-          // initial={{ opacity: 0, x: "-100px" }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // transition={{ duration: 1.5 }}
+          </motion.div>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={techContainerVariants}
           className="space-y-4 bg-white dark:bg-[#171719] py-10 px-5 rounded-xl lg:col-start-1 lg:col-span-2"
         >
-          <h1 className="text-4xl font-semibold">
+          <motion.h1
+            variants={techItemVariants}
+            className="text-4xl font-semibold"
+          >
             My <span className="text-text-blue">Tech Stack</span>
-          </h1>
-          <h1 className="text-lg text-text-color/70">
+          </motion.h1>
+          <motion.h1
+            variants={techItemVariants}
+            className="text-lg text-text-color/70"
+          >
             Always Evolving my Tech Stack
-          </h1>
+          </motion.h1>
           <div className="grid grid-cols-small sm:grid-cols-auto mt-5 gap-10 ">
             {techStack.map((tech, index) => (
-              <div
+              <motion.div
+                variants={techItemVariants}
+                whileHover={{
+                  scale: 1.05,
+                  y: -5,
+                }}
                 className="bg-gray-50 dark:bg-black rounded-lg p-6 flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105 cursor-pointer"
                 key={index}
               >
@@ -92,11 +222,14 @@ const About = () => {
                 <span className="font-medium tracking-wide uppercase text-sm">
                   {tech.name}
                 </span>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
-        <div className="gap-10 flex flex-col justify-between">
+        </motion.div>
+        <motion.div
+          variants={itemVariants}
+          className="gap-10 flex flex-col justify-between"
+        >
           {/* <div
             // initial={{ opacity: 0, x: "200px" }}
             // whileInView={{ opacity: 1, x: 0 }}
@@ -157,8 +290,8 @@ const About = () => {
               </Link>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

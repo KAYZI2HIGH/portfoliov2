@@ -8,8 +8,9 @@ import { useForm } from "react-hook-form";
 
 import toast from "react-hot-toast";
 import { CircularProgress } from "@mui/material";
+import { motion } from 'framer-motion';
 
-const Form = () => {
+const Form = ({containerVariants, itemVariants}) => {
   const {
     register,
     handleSubmit,
@@ -52,7 +53,8 @@ const Form = () => {
    };
 
   return (
-    <form
+    <motion.form
+      variants={containerVariants}
       // initial={{ opacity: 0, x: "200px" }}
       // whileInView={{ opacity: 1, x: 0 }}
       // transition={{ duration: 1.5 }}
@@ -64,7 +66,8 @@ const Form = () => {
       </h1>
       <div>
         <div className="grid sm:grid-cols-auto-input gap-5">
-          <input
+          <motion.input
+            variants={itemVariants}
             type="text"
             name="firstName"
             placeholder="First name"
@@ -78,7 +81,8 @@ const Form = () => {
               {errors.firstName.message}
             </p>
           )}
-          <input
+          <motion.input
+            variants={itemVariants}
             type="text"
             name="lastName"
             placeholder="Last name"
@@ -92,7 +96,8 @@ const Form = () => {
               {errors.lastName.message}
             </p>
           )}
-          <input
+          <motion.input
+            variants={itemVariants}
             type="email"
             name="email"
             placeholder="Email address"
@@ -106,7 +111,8 @@ const Form = () => {
               {errors.email.message}
             </p>
           )}
-          <input
+          <motion.input
+            variants={itemVariants}
             type="tel"
             name="phone"
             placeholder="Phone number"
@@ -121,7 +127,8 @@ const Form = () => {
             </p>
           )}
         </div>
-        <textarea
+        <motion.textarea
+          variants={itemVariants}
           name="message"
           placeholder="Message"
           {...register("message", {
@@ -135,7 +142,8 @@ const Form = () => {
           </p>
         )}
       </div>
-      <Button
+      <motion.Button
+        variants={itemVariants}
         type="submit"
         variant="contained"
         disabled={isSubmitting}
@@ -143,9 +151,9 @@ const Form = () => {
           isSubmitting ? "bg-gray-300" : "bg-[#5100FF]"
         }`}
       >
-        {isSubmitting ? <CircularProgress size={18}/> : "send now"}
-      </Button>
-    </form>
+        {isSubmitting ? <CircularProgress size={18} /> : "send now"}
+      </motion.Button>
+    </motion.form>
   );
 };
 

@@ -18,6 +18,132 @@ export const navLinks = [
 ];
 export const projects = [
   {
+    name: "FlavourfulMenus",
+    description: `FlavourfulMenus is a restaurant web app where users can explore a variety of meals, add items to their cart, and make secure payments seamlessly. The platform ensures a smooth and responsive experience across all devices.`,
+    category: "fullstack",
+    about: `FlavourfulMenus is a modern restaurant application that allows users to browse meals, customize their orders, and complete purchases using secure payment methods. The app was designed to provide a seamless online food ordering experience with real-time updates, smooth animations, and a mobile-friendly interface. With a structured backend and dynamic frontend, it efficiently manages content, orders, and payments.`,
+    keyFeatures: [
+      "User-friendly meal browsing and ordering",
+      "Cart management with real-time updates",
+      "Secure payments via Paystack",
+      "Admin dashboard for managing menu items",
+      "Responsive design for all devices",
+      "Smooth animations with Framer Motion",
+    ],
+    projectDetails: {
+      duration: "3 weeks",
+      teamSize: 1,
+      outcomes: [
+        "Gained hands-on experience with Next.js for server-side rendering",
+        "Implemented Sanity CMS for structured content management",
+        "Integrated Paystack for seamless payment processing",
+        "Enhanced my skills in building fullstack applications",
+      ],
+    },
+    image: ['flavourfulmenus/home', 'flavourfulmenus/menu', 'flavourfulmenus/about', 'flavourfulmenus/contact', 'flavourfulmenus/cart', 'flavourfulmenus/checkout', 'flavourfulmenus/payment-gateway'],
+    gitHubUrl: "https://github.com/KAYZI2HIGH/flavourfulmenus",
+    url: "https://flavourfulmenus.vercel.app/",
+    techStack: [
+      "Next.js",
+      "Tailwind",
+      "Sanity CMS",
+      "Context API",
+      "Paystack",
+      "Vercel",
+    ],
+  },
+  {
+    name: "AI Text Processor",
+    description: `An AI-powered text processing tool built to enhance text manipulation, formatting, and analysis. It provides a seamless user experience with advanced text transformation features and browser integration.`,
+    category: "fullstack",
+    about: `This AI Text Processor was developed as part of a task in the HNG internship. It leverages AI capabilities for intelligent text manipulation, including formatting, summarization, and enhancements. The project integrates the Chrome API for an optimized user experience within the browser. Designed for efficiency, it offers real-time text processing with a clean and responsive UI.`,
+    keyFeatures: [
+      "AI-powered text formatting and transformation",
+      "Real-time text processing",
+      "Browser integration via Chrome API",
+      "Customizable text enhancement options",
+      "Responsive and user-friendly interface",
+    ],
+    projectDetails: {
+      duration: "Task-based (Internship)",
+      teamSize: 1,
+      outcomes: [
+        "Gained hands-on experience with Chrome API integration",
+        "Deepened my understanding of AI-driven text processing",
+        "Improved my ability to build efficient and responsive web applications",
+      ],
+    },
+    image: ["ai-text-processor/home", "ai-text-processor/text-processor"],
+    gitHubUrl: "https://github.com/KAYZI2HIGH/ai-text-processor",
+    url: "https://ai-text-processor-omega.vercel.app/",
+    techStack: [
+      "Next.js",
+      "Tailwind",
+      "Chrome API",
+      "AI-powered processing",
+      "Vercel",
+    ],
+  },
+  {
+    name: "Youtube Clone.",
+    description: `I built a YouTube clone with React that includes video search, playback, and recommendations. It offers smooth navigation, fast loading, and a responsive design for all screen sizes.`,
+    category: "frontend",
+    about: `This project was a deep dive into replicating key functionalities of YouTube, focusing on providing a seamless user experience. The aim was to build a dynamic web application that allows users to search, view, and interact with video content efficiently. This project required integrating third-party APIs, optimizing performance for various screen sizes, and leveraging React's capabilities for state management and component-based development.`,
+    keyFeatures: [
+      "Video search functionality",
+      "Video playback with responsive player",
+      "Recommended video suggestions",
+      "Dynamic routing for individual video pages",
+      "Responsive design for all devices",
+    ],
+    projectDetails: {
+      duration: "2 weeks",
+      teamSize: 1,
+      outcomes: [
+        "Enhanced my understanding of React state management with Context API",
+        "Improved API integration and data fetching techniques",
+        "Gained experience in creating a responsive video application",
+      ],
+    },
+    image: ["youtube-demo/home", "youtube-demo/channels", "youtube-demo/player"],
+    gitHubUrl: "https://github.com/KAYZI2HIGH/Youtube-Demo",
+    url: "https://youtube-gray-ten.vercel.app/",
+    techStack: [
+      "Tailwind",
+      "Framer Motion",
+      "React",
+      "Context API",
+      "Vercel",
+      "Rapid API",
+    ],
+  },
+  {
+    name: "Amazon demo website.",
+    description: `I developed an Amazon demo website simulating an e-commerce platform with product listings, search, product details, and a shopping cart. Built with React, it offers a responsive and intuitive user interface.`,
+    category: "frontend",
+    about: `This project is a simplified e-commerce website that mimics Amazon's core functionality. It includes product listings, dynamic search features, and a shopping cart for a complete user experience. The focus was on creating an interactive interface that adapts to user needs, ensuring mobile responsiveness and smooth transitions.`,
+    keyFeatures: [
+      "Product listing and filtering",
+      "Dynamic search functionality",
+      "Shopping cart with add/remove item features",
+      "Responsive and mobile-friendly layout",
+      "Integrated React Context API for state management",
+    ],
+    projectDetails: {
+      duration: "2 weeks",
+      teamSize: 1,
+      outcomes: [
+        "Improved knowledge of building e-commerce platforms",
+        "Learned efficient state management techniques",
+        "Strengthened responsive design skills",
+      ],
+    },
+    image: ["amazon-demo/home", "amazon-demo/cart", "amazon-demo/orders"],
+    gitHubUrl: "https://github.com/KAYZI2HIGH/Amazon",
+    url: "https://amazon-alpha-pearl.vercel.app/",
+    techStack: ["Material UI", "Tailwind", "React", "Context API", "Vercel"],
+  },
+  {
     name: "YCDirectory",
     description: `A platform for creating and reading startup details, built with Next.js. It provides real-time updates, secure authentication, and error monitoring.`,
     category: "fullstack",
@@ -40,7 +166,7 @@ export const projects = [
       "Sentry",
       "Vercel",
     ],
-    image: "project6",
+    image: ["ycdirectory/home", "ycdirectory/create", "ycdirectory/pitchDetails"],
     projectDetails: {
       duration: "6 weeks",
       teamSize: 1,
@@ -74,7 +200,7 @@ export const projects = [
       "Mongoose",
       "Vercel",
     ],
-    image: "Project5",
+    image: ["baynedad/home", "baynedad/listings", "baynedad/addProperty", "baynedad/contact", "baynedad/login"],
     projectDetails: {
       duration: "7 weeks",
       teamSize: 1,
@@ -88,65 +214,7 @@ export const projects = [
     gitHubUrl: "https://github.com/KAYZI2HIGH/baynedad", // Replace with the actual repo link
     url: "https://baynedad.vercel.app/", // Replace with the actual deployment link
   },
-  {
-    name: "Youtube Clone.",
-    description: `I built a YouTube clone with React that includes video search, playback, and recommendations. It offers smooth navigation, fast loading, and a responsive design for all screen sizes.`,
-    category: "frontend",
-    about: `This project was a deep dive into replicating key functionalities of YouTube, focusing on providing a seamless user experience. The aim was to build a dynamic web application that allows users to search, view, and interact with video content efficiently. This project required integrating third-party APIs, optimizing performance for various screen sizes, and leveraging React's capabilities for state management and component-based development.`,
-    keyFeatures: [
-      "Video search functionality",
-      "Video playback with responsive player",
-      "Recommended video suggestions",
-      "Dynamic routing for individual video pages",
-      "Responsive design for all devices",
-    ],
-    projectDetails: {
-      duration: "2 weeks",
-      teamSize: 1,
-      outcomes: [
-        "Enhanced my understanding of React state management with Context API",
-        "Improved API integration and data fetching techniques",
-        "Gained experience in creating a responsive video application",
-      ],
-    },
-    image: "project2",
-    gitHubUrl: "https://github.com/KAYZI2HIGH/Youtube-Demo",
-    url: "https://youtube-gray-ten.vercel.app/",
-    techStack: [
-      "Tailwind",
-      "Framer Motion",
-      "React",
-      "Context API",
-      "Vercel",
-      "Rapid API",
-    ],
-  },
-  {
-    name: "Amazon demo website.",
-    description: `I developed an Amazon demo website simulating an e-commerce platform with product listings, search, product details, and a shopping cart. Built with React, it offers a responsive and intuitive user interface.`,
-    category: "frontend",
-    about: `This project is a simplified e-commerce website that mimics Amazon's core functionality. It includes product listings, dynamic search features, and a shopping cart for a complete user experience. The focus was on creating an interactive interface that adapts to user needs, ensuring mobile responsiveness and smooth transitions.`,
-    keyFeatures: [
-      "Product listing and filtering",
-      "Dynamic search functionality",
-      "Shopping cart with add/remove item features",
-      "Responsive and mobile-friendly layout",
-      "Integrated React Context API for state management",
-    ],
-    projectDetails: {
-      duration: "2 weeks",
-      teamSize: 1,
-      outcomes: [
-        "Improved knowledge of building e-commerce platforms",
-        "Learned efficient state management techniques",
-        "Strengthened responsive design skills",
-      ],
-    },
-    image: "project3",
-    gitHubUrl: "https://github.com/KAYZI2HIGH/Amazon",
-    url: "https://amazon-alpha-pearl.vercel.app/",
-    techStack: ["Material UI", "Tailwind", "React", "Context API", "Vercel"],
-  },
+
   {
     name: "Champions Webpage.",
     description: `I created a church website to enhance community engagement with event schedules, online testimonies, and a contact section. Built with React, it’s mobile-friendly and adapts to all screen sizes.`,
@@ -168,7 +236,7 @@ export const projects = [
         "Learned to implement smooth animations with Framer Motion",
       ],
     },
-    image: "project1",
+    image: ["project1"],
     gitHubUrl: "https://github.com/KAYZI2HIGH/Champions",
     url: "https://champions-pi.vercel.app/",
     techStack: [
@@ -201,7 +269,7 @@ export const projects = [
         "Enhanced animation and layout design skills",
       ],
     },
-    image: "project4",
+    image: ["project4"],
     gitHubUrl: "https://github.com/KAYZI2HIGH/portfoliov2",
     url: "https://portfoliov2-seven-delta.vercel.app/",
     techStack: [
@@ -283,7 +351,7 @@ export const techStack = [
     name: "Tailwind",
     imageUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },  
+  },
   {
     name: "VSCode",
     imageUrl:

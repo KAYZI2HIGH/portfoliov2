@@ -67,7 +67,7 @@ const [circles, setCircles] = useState([])
       // initial={{ opacity: 0, scale: 0.5 }}
       // animate={{ opacity: 1, scale: 1 }}
       // transition={{ type: "spring", duration: 2.5, delay: 0.2 }}
-      className="text-center px-7 relative flex items-center md:justify-center  h-screen overflow-hidden"
+      className="text-center px-7 relative flex items-center md:justify-center h-[calc(100vh-60px)] md:h-screen overflow-hidden"
       id="home"
     >
       <motion.div
@@ -107,7 +107,7 @@ const [circles, setCircles] = useState([])
         initial="hidden"
         animate={controls}
         variants={containerVariants}
-        className="relative w-full max-w-[800px] flex flex-col gap-3 text-black dark:text-white mt-24"
+        className="relative w-full max-w-[800px] flex flex-col gap-3 text-black dark:text-white"
       >
         <motion.h1
           variants={itemVariants}

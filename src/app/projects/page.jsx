@@ -11,7 +11,7 @@ export const metadata = {
 
 const ProductPage = () => {
   return (
-    <section className="mt-24 pt-16">
+    <section className="mt-24">
       <div className="w-full max-w-[1000px] flex flex-col gap-5 md:gap-7 mx-auto px-8 pb-20">
         <BackButton />
         <div className="flex gap-3 w-fit md:mx-auto justify-center items-center">

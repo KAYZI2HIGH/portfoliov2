@@ -47,10 +47,10 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      variants={{ hidden: { top: "-200px", opacity: 0, visibility: "hidden" }, visible: {top: '40px', opacity: 1, visibility: "visible" } }}
+      variants={{ hidden: { y: "-200%", opacity: 0, visibility: "hidden" }, visible: {y: '0', opacity: 1, visibility: "visible" } }}
       animate={`${hidden ? "hidden" : "visible"}`}
       transition={{ duration: 0.33, ease: easeInOut }}
-      className={`fixed flex justify-between items-center p-4 shadow-lg  bg-[#EFEFF1] dark:bg-[#000000] rounded-xl top-10 left-1/2 -translate-x-1/2 z-50 min-w-[70%] md:min-w-[300px] w-fit mx-auto gap-4 `}
+      className={`sticky flex justify-between items-center p-4 shadow-lg  bg-[#EFEFF1] dark:bg-[#000000] rounded-xl top-10 z-50 min-w-[70%] md:min-w-[300px] w-fit mx-auto gap-4 `}
     >
       <div className="size-10 relative">
         <Link href={'/'}>
@@ -96,7 +96,7 @@ const Navbar = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 20 }}
-              className="w-1/2 h-full absolute top-0 right-0 bottom-0 md:hidden bg-white dark:bg-[#1F2937] dark:text-white py-20 px-10"
+              className="w-1/2 h-full absolute top-0 right-0 bottom-0 md:hidden bg-white dark:bg-[#131b26] dark:text-white py-20 px-10"
             >
               {
                 <NavLinks

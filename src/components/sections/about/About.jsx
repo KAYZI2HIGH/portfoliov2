@@ -3,7 +3,7 @@ import { techStack } from "@/utils/constants";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
@@ -18,7 +18,8 @@ const About = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.5,
+        delay: 0.2,
+        staggerChildren: 0.7,
       },
     },
   };

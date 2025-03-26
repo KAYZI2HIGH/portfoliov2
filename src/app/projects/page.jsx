@@ -4,7 +4,7 @@ import { projects } from "@/utils/constants";
 import { Briefcase } from "lucide-react";
 
 export const metadata = {
-  title: "Projects - Kayode Portfolio", // This will be used in the default template.
+  title: "Projects - Kayode Portfolio",
   description: "Explore my web development projects.",
 };
 

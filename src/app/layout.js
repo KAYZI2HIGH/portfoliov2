@@ -9,8 +9,8 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: {
-    template: '%s | Kayode Portfolio',
-    default: 'Kayode Portfolio'
+    template: "%s | Kayode Portfolio",
+    default: "Kayode Portfolio",
   },
   description:
     "Showcasing projects and expertise in frontend and full-stack development.",
@@ -25,6 +25,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           type="text/css"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+        <meta
+          name="google-site-verification"
+          content="mrpHBzHaSOrtessmeLWY_D_a4_v168RxWM2EqcQwB7E"
         />
       </head>
       <body

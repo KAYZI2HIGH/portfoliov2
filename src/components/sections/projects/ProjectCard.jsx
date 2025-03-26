@@ -26,12 +26,11 @@ const ProjectCard = ({ project, index, itemVariants }) => {
         <h1 className="py-1 px-2 text-white bg-green-600 rounded-full small_text font-semibold tracking-wide capitalize lg:text-sm whitespace-nowrap absolute top-3 right-3 z-30">
           {project.category}
         </h1>
-        <ImageSlider images={project.image}/>
-        {/* <Image
-          src={`/images/${project.image}.png`}
+        <Image
+          src={`/images/${project.image[0]}.png`}
           alt="Project Image"
           fill
-        /> */}
+        />
       </div>
       <div className="flex justify-between px-4 items-center mt-4">
         <h1 className="body_text font-medium tracking-wide">{project.name}</h1>
